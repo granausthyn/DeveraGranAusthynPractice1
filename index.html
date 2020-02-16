@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Create a New Event
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="data" action="" method="post">
+            <h3>Create Event Form</h3>
+            <h5>Fields with <span style="color: red;"><strong>* </strong></span> are required</h5>
+
+            <fieldset>
+                <label><span style="color: red;"><strong>* </strong></span>Event Type:</label>
+                <select id='event-type' name="event-type" required t>
+                    <option value=""></option>
+                    <option value='Anniversary'>Anniversary</option>
+                    <option value='Birthday'>Birthday</option>
+                    <option value='Conference'>Conference</option>
+                    <option value='Debut'>Debut</option>
+                    <option value='Gala'>Gala</option>
+                    <option value='Reunion'>Reunion</option>
+                    <option value='Seminar'>Seminar</option>
+                    <option value='Trade Show'>Trade Show</option>
+                    <option value='Workshop'>Workshop</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label><span style="color: red;"><strong>* </strong></span>Event Title: </label><input type="text"
+                    required>
+            </fieldset>
+            <fieldset>
+                <label><span style="color: red;"><strong>* </strong></span>Event Dates: </label> <input type="date"
+                    size='30' id="start" required> to <input type="date" id="end" required>
+            </fieldset>
+            <fieldset>
+                <label><span style="color: red;"><strong>* </strong></span>Posting Date: </label> <input type="date"
+                    size='30' id="posting" required>
+
+            </fieldset>
+            <fieldset>
+                <input type='checkbox'> Is registration required?
+            </fieldset>
+            <fieldset>
+                <input type='checkbox'> Is this event associated with any family programs?
+            </fieldset>
+            <fieldset>
+                <input type='checkbox'> Upon registration completion, are users to receive an
+                auto-generated email?
+            </fieldset>
+            <fieldset>
+                <input type='checkbox'> Is there a point of contact?
+            </fieldset>
+            <fieldset>
+                <input type='checkbox'> Is there a hosting command point of contact?
+            </fieldset>
+            <fieldset>
+                <button name="save" type="submit" id="data-submit" onclick="dataValidation()">
+                    SAVE
+                </button>
+            </fieldset>
+            <fieldset>
+                <button name="cancel" type="reset" id="data-reset" onclick="resetForm()">
+                    CANCEL
+                </button>
+            </fieldset>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
